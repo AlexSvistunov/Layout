@@ -245,6 +245,7 @@ h1,h2,h3,h4 {
 .history {
     margin-top: 166px;
     margin-left: 155px;
+    padding-bottom: 250px;
 }
 .history__title  {
     font-family: 'Tinos', serif;
@@ -328,3 +329,322 @@ h1,h2,h3,h4 {
     left: -164px;
 
 }
+
+.footer__block {
+    background-image: url(/css/bg-black.jpg);
+    padding: 80px 0;
+    margin-bottom: 130px;
+}
+
+.info__title {
+    font-family: 'Tinos';
+    color: #D67E34;
+    font-size: 50px ;
+    margin-bottom: 20px;
+
+
+}
+
+
+.info__text {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.btn {
+    padding: 14px 18px;
+    background-color: 
+    #FF7400;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    font-weight: 700;
+    
+    transition: background-color 0.2s ease;
+    
+}
+
+.block__dishes {
+    margin-bottom: 150px;
+}
+
+.btn:hover {
+    background-color:#994d0f;
+}
+
+.block__holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.dishes__title {
+    margin-bottom: 180px;
+    font-family: 'Tinos';
+    text-align: center;
+    font-weight: 400;
+    font-size: 54px;
+    color: black;
+
+}
+
+.dishes__title span {
+    color: #D67E34;
+    
+
+}
+
+
+.dishes__items {
+    display: flex;
+    
+}
+
+.pizza__block {
+    margin-right: 30px;
+}
+
+.burger__item {
+    display: flex;
+    margin-bottom: 29px;
+    align-items: center;
+}
+
+.burger__item p {
+    font-family: 'Tinos';
+    font-weight: 400;
+    color: black;
+    font-size: 26px;
+   
+}
+
+.burger__item-img {
+    margin-right: 15px;
+}
+
+.menu {
+    background-image: url(/css/bg-menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.menu__title {
+    font-family: 'Tinos';
+    padding-top: 98px;
+    color: white;
+    font-size: 54px;
+    text-align: center;
+    padding-bottom: 138px;
+
+}
+
+.menu__items {
+    display: flex;
+    justify-content: center;
+}
+.menu__item {
+    background-color: white;
+    text-align: center;
+    width: 33%;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    margin-right: 30px;
+  
+}
+
+.menu__text {
+    padding-top: 16px;
+    font-family: 'Tinos';
+    font-size: 26px;
+    padding-bottom: 17px;
+}
+
+.menu__desc {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    padding-bottom: 34px;
+
+}
+
+.menu__button {
+    margin-top: 20px;
+}
+
+.menu__button {
+    padding: 14px 68px;
+    background-color: 
+    #FF7400;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-decoration: none;
+    
+    transition: background-color 0.2s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.menu__img {
+    position: relative;
+}
+.menu__circle {
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+}
+
+
+.price__420 {
+    position: absolute;
+    bottom: 30px;
+    right: 147px;
+    font-size: 30px;
+}
+
+
+
+.comment {
+    background-color: 
+    #E5E5E5;
+    padding: 104px 0 139px 0;
+
+    margin-bottom: 100px;
+}
+
+
+.comment__text {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.comment__img {
+    text-align: center;
+}
+.comment__image {
+    border-radius: 50px;
+}
+
+.comment__type {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+.comment__name {
+    font-weight: 400px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.galery__title {
+    margin-bottom: 60px;
+
+    font-family: 'Tinos';
+    font-weight: 400;
+    font-size: 54px;
+
+    color: black;
+
+    text-align: center;
+
+}
+
+.galery__title span {
+    color: #D67E34;
+}
+
+
+.galery__images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.galery__left {
+    margin-right: 30px;
+}
+
+.galery__left-top {
+    margin-bottom: 20px;
+}
+
+
+
+
+.galery__left-bot {
+    display: flex;
+}
+
+.galery__left-bot-img {
+    margin-right: 30px;
+}
+
+.galery__right {
+    
+}
+
+.galery__right-top {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.galery__right-top-img {
+    margin-right: 30px;
+
+}
+
+.block__cook {
+    margin-bottom: 100px;
+}
+
+
+.title__cook {
+    margin-bottom: 105px;
+
+    font-family: 'Tinos';
+    font-weight: 400;
+    font-size: 54px;
+
+    color: black;
+
+    text-align: center;
+}
+
+.title__cook span {
+
+    color: #D67E34;
+
+}
+
+
+.cookers__images {
+    display: flex;
+    justify-content: center;
+}
+
+.cookers__image-1 {
+    margin-right: 30px;
+}
+
+.cookers__image-2 {
+    margin-right: 30px;
+}
+
+
+.footer {
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    }
+
