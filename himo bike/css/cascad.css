@@ -466,3 +466,72 @@ p {
 .form__btn {
     margin-bottom: 80px;
 }
+
+
+.footer {
+    background-color: #131313;
+    padding: 50px 0;
+
+
+
+}
+
+
+.policy {
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+
+.policy {
+
+
+}
+
+.socials__img + .socials__img {
+    margin-left: 29px;
+
+}
+
+.contacts {
+
+}
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+
+}
+
+.contacts__item-img {
+    margin-right: 15px;
+}
+
+.contacts__item + .contacts__item {
+    margin-top: 19px;
+}
+
+.contacts__item-phone {
+
+}
+
+
+.socials__link-img:nth-child(1) {
+    margin-left: 20px;
+}
+
+
+.btn:hover {
+    background-color: #ff4040;
+    color: teal;
+}
+
+.btn {
+    transition: all 0.35s ease;
+}
