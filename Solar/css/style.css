@@ -1,0 +1,527 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #303030;
+    /* font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+}
+
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
+
+
+/* чтобы раскидать как в justify content, но только снизу. делаем через флексы, меняя оси, а потом
+тем же justify'ЕМ перекидываем */
+.header {
+    background-image: url(../images/background.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 10px 38px;
+    margin-bottom: 150px;
+}
+
+/* .header__button(самый нижний мы отталкиваем снизу авто), а также делаем это и header__subtitle
+(отталкивая его от верха, так как он верхний элемент),тем самым мы их центрируем(отталкиваемся
+и сверху, и снизу) */
+.header__subtitle {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: auto;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 87px;
+}
+
+.header__title span {
+    display: block;
+    font-size: 42px;
+    line-height: 57px;
+}
+
+/* .header__button(самый нижний мы отталкиваем снизу авто), а также делаем это и header__subtitle
+(отталкивая его от верха, так как он верхний элемент), тем самым мы их центрируем(отталкиваемся
+и сверху, и снизу)
+align-self: center - чтобы не растягивалась*/
+.header__button {
+
+    margin-bottom: auto;
+    margin-top: 50px;
+    align-self: center;
+
+}
+/* ниже два это работа с svg, а именно с path.
+задали класс path'У, а еще задали fill:transparent, чтобы работал transition. transition так не работает, если был none, а стал такой-то. нужно сделать прозрачным
+
+еще мы перекинули нижний path к верхнему чтобы сделать свой "z-index",
+а также проверили, где там кружочек, а где стрелочка, просто вписали fill="red, 
+а потом поиеняли местами path'Ы*/
+.button__path {
+    transition: fill .5s;
+}
+
+
+.button:hover .button__path{
+    fill: #A9A32A;
+
+
+}
+
+
+/* не надо лепить position absolute просто фигачим transform: translate */
+.button__text {
+    font-size: 18px;
+    line-height: 25px;
+    display: inline-block;
+    transform: translateY(-17px);
+    margin-left: -57px;
+}
+
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.social__link {
+    padding: 0 10px;
+
+}
+
+
+.service {
+    margin-bottom: 180px;
+
+}
+
+
+
+
+
+
+.title {
+    color: #868585;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.service__wrapper {
+    display: flex;
+
+}
+
+
+
+.service__items {
+    margin-right: 90px;
+    flex-basis: 510px;
+
+}
+
+.service__item {
+    margin-bottom: 50px;
+
+}
+
+
+
+.service__item-title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+
+}
+
+
+
+
+.service__img {
+    object-fit: cover;
+
+}
+
+.info {
+    margin-bottom: 150px;
+}
+
+.info__inner {
+    display: flex;
+}
+
+.info__box {
+    flex-basis: 510px;
+    margin-right: 90px;
+
+}
+
+.info__content {
+    flex-basis: 600px;
+}
+
+.info__content-text {
+    margin-bottom: 17px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+
+.info-tabs {
+    margin-bottom: 100px;
+
+}
+
+.info-tabs__items {
+    margin-bottom: 120px;
+
+}
+
+.info-tabs__item {
+    font-style: 18px;
+    line-height: 25px;
+    margin-right: 40px;
+}
+
+
+.info-tabs__item--active {
+    border-bottom: 1px solid #303030;
+}
+
+
+.info-tabs__content {
+    display: none;
+}
+
+.info-tabs__content--active {
+    display: block;
+}
+
+.info-slider {
+    max-width: 510px;
+}
+
+/* float - св-во, работающее с картинками и текстами, для того, чтобы текст 
+обтекал картинку слева или справа */
+.info-slider__img {
+    margin-right: 40px;
+    float: left;
+
+}
+
+.infp-slider__text {
+    padding-bottom: 15px;
+}
+
+.slick-arrow {
+    position: absolute;
+    left: 275px;
+    bottom: -3px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.slick-right {
+    left: 340px;
+
+}
+
+.info__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* ВАЖНО! Тут как раз таки то,
+почему и переносится допустим блочный тег. Потому что у него ширина оч большая, поэтому не 
+влезает и переносится, а тут мы flex-basis задаем 235 */
+.info__list-item {
+    flex-basis: 235px;
+    margin-bottom: 17px;
+}
+
+.info__list-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 5px;
+
+}
+
+.blockquote {
+    padding: 128px 10px 144px;
+    background-image: url('/images/blockquote.jpg');
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 150px;
+}
+
+.blockquote__text {
+    max-width: 670px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 57px;
+    color: #fff;
+}
+
+
+.clients {
+    margin-bottom: 150px;
+}
+
+.clients-slider__box {
+    display: flex;
+}
+
+.clients-slider__box-img {
+    flex-basis: 510px;
+    margin-right: 90px;
+    margin-bottom: 30px;
+}
+
+.clients-slider__box-title {
+    font-size: 18px;
+    max-width: 478px;
+    line-height: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+}
+
+.clients-slider__box-list {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.clients-slider__box-item {
+    margin-bottom: 15px;
+}
+
+.slick-arrow path {
+    transition: fill .5s;
+}
+
+.slick-arrow:hover path {
+    fill: #A9A32A;
+
+}
+
+.steps {
+    margin-bottom: 150px;
+}
+
+.steps__wrapper {
+    display: flex;
+}
+
+.steps__items {
+    max-width: 510px;
+    margin-right: 90px;
+
+}
+
+.steps__item {
+    margin-bottom: 30px;
+}
+
+.steps__item-number {
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 14px;
+    color: #868585;
+    margin-bottom: 10px;
+}
+
+.steps__item-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 2px;
+
+}
+
+
+.steps__img {
+    flex-basis: 600px;
+    object-fit: cover;
+}
+
+
+
+/* ЕСЛИ БЫ ЭТО БЫЛА OL ВМЕСТО UL 
+.STEP__LIST
+LIST STYLE NONE
+COUNTER-RESET NUMBER
+
+.STEP__LIST-ITEM {
+    COUNTER-INCREMENT NUMBER
+
+
+.STEP__LIST-ITEM::BEFORE {
+    CONTENT '0' COUNTER(NUMBER)    */
+
+
+.footer {
+    background-image: url(../images/footer-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0 50px;
+    color: #fff;
+}
+
+.footer__top {
+    display: flex;
+    margin-bottom: 150px;
+
+}
+
+.footer__form {
+    flex-basis: 510px;
+    margin-right: 90px;
+}
+
+.footer__title {
+    margin-bottom: 60px;
+    font-size: 24px;
+    stroke-linejoin: 33px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer__input {
+    border: none;
+    border-bottom: 1px solid #fff;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    padding-bottom: 11px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+    margin-bottom: 60px;
+
+}
+
+.footer__input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+
+}
+
+
+.footer__form-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: #fff;
+    
+}
+
+.footer__bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .social {
+    margin-right: -10px;
+}
+
+
+.footer__contact-item {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.footer__contact-item + .footer__contact-item {
+    margin-top: 30px;
+}
+
+
+
+@media (max-width: 768px) {
+.header__title {
+    line-height: 56px;
+    font-size: 48px;
+}
+
+.header__title span {
+    font-size: 32px;
+    line-height: 40px;
+}
+}
+
+@media(max-width: 540px) {
+    .header__title {
+        line-height: 32px;
+        font-size: 38px;
+    }
+    
+    .header__title span {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .header__subtitle {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+}
+
+
+@media(max-width: 375px) {
+    .button__text {
+        margin-left: -75px;
+    }
+}
+
+
+
+
+
