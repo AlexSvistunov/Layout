@@ -472,7 +472,7 @@ COUNTER-RESET NUMBER
     margin-right: -10px;
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 1240px) {
     .info__inner {
         flex-wrap: wrap;
     }
@@ -522,6 +522,23 @@ COUNTER-RESET NUMBER
         height: 400px;
     }
 
+    .steps__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .steps__items {
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .steps__img {
+        object-fit: cover;
+        height: 400px;
+        flex-basis: 100%;
+        max-width: 100%;
+
+    }
+
 }
 
 
@@ -545,6 +562,23 @@ COUNTER-RESET NUMBER
     }
 }
 
+@media(max-width: 960px) {
+    .clients-slider__box {
+        display: block;
+    }
+
+    .clients-slider__box-title {
+        max-width: 100%;
+    }
+
+    .clients-slider__box-img {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+        margin-right: 0;
+    }
+}
+
 
 
 @media (max-width: 768px) {
@@ -556,6 +590,36 @@ COUNTER-RESET NUMBER
 .header__title span {
     font-size: 32px;
     line-height: 40px;
+}
+
+.blockquote {
+    padding: 60px 10px 80px;
+}
+
+.blockquote__text {
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.footer__top {
+    flex-wrap: wrap;
+}
+
+.footer__form {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+}
+
+.footer__bot {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__bot .header__logo {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
 }
 }
 
@@ -588,6 +652,66 @@ COUNTER-RESET NUMBER
         line-height: 22px;
     }
 
+    /* .info-slider {
+        max-width: 100%;
+    }
+    
+    .info-slider__img {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .info__slider-text {
+        max-width: 510px;
+    } */
+
+    .clients-slider__box-list {
+        margin-left: 0;
+    }
+
+    .info-slider {
+        max-width: 350px;
+        margin: 0 auto;
+    } 
+
+    .info-slider__img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px;
+        float: none;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .slick-right {
+        left: calc(50% + 10px);
+
+    }
+
+    .slick-left {
+
+        left: calc(50% - 50px);
+
+    }
+
+    .info__list {
+        display: block;
+    }
+
+    .info-tabs__item {
+        margin-right: 0;
+        padding: 10px;
+        display: block;
+
+
+    }
+
+
+
+
+
 }
 
 
@@ -603,8 +727,19 @@ COUNTER-RESET NUMBER
     .service__item {
         margin-bottom: 30px;
     }
+
+    .blockquote__text {
+        font-size: 22px;
+        line-height: 28px;
+    }
 }
 
+
+@media(max-width: 340px) {
+    .info-slider {
+        width: 280px;
+    }
+}
 
 
 
