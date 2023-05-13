@@ -1,0 +1,494 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #2C2B2B;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height: 700px;
+    color: #fff;
+
+}
+
+
+.header__top {
+    padding: 47px 0 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+
+}
+
+
+.header__content {
+    position: relative;
+
+}
+
+.header__title {
+    padding-top: 60px;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 107px;
+    text-transform: uppercase;
+
+}
+
+
+.header__subtitle {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    margin-top: 30px;
+
+}
+
+
+.header__text {
+    margin-bottom: 30px;
+    max-width: 800px;
+}
+
+.btn {
+    background-color: #5A0D67;
+    padding: 14px 54px;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    transition: all .35s ease;
+    border: 1px solid transparent;
+}
+
+
+.btn:hover {
+    background-color: #fff;
+    color: #5A0D67;
+    border: 1px solid black;
+}
+
+
+.header__social {
+    padding: 70px 0 20px 70px;
+
+
+}
+
+.social__link {
+    margin: 0 5px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.header__social-link{
+    margin-right: 10px;
+
+}
+
+
+
+.header__images {
+    position: absolute;
+    right: 0;
+    bottom: -267px;
+
+}
+
+
+.services {
+    padding-top: 350px;
+}
+
+.services__inner {
+    display: flex;
+    margin-bottom: 100px;
+    
+}
+
+.title {
+    position: relative;
+    margin-bottom: 50px;
+    color: #21062A;
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.title::after {
+    top: 22px;
+    margin-left: 20px;
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #21062A;
+    position: absolute;
+
+}
+
+
+.services__content {
+    width: 505px;
+    margin-right: 96px;
+}
+
+.services__content-box {
+
+}
+
+.services__content-title {
+    margin-bottom: 12px;
+    color: #5A0D67;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+
+}
+
+.services__content-textbox {
+    margin-bottom: 57px;
+
+
+}
+
+.services__content-text {
+    margin-bottom: 12px;
+
+}
+
+
+.btn--decor {
+    margin-top: -7px;
+    color: #fff;
+    position: relative;
+
+}
+
+.btn--decor::after {
+    position: absolute;
+    content: 'ЖМИ';
+    color: #C4C4C4;
+    margin-left: 130px;
+}
+
+.btn--decor::before {
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: #C4C4C4;
+    position: absolute;
+    right: -65px;
+    top: 24px;
+}
+
+
+.services__list {
+    list-style: none;
+    counter-reset: my-counter;
+
+}
+
+.services__item {
+    position: relative;
+    counter-increment: my-counter;
+    border: 1px solid #C4C4C4;
+    margin-bottom: 12px;
+    width: 450px;
+    padding: 10px 15px 10px 113px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.services__item::before {
+    content: '0' counter(my-counter); 
+    position: absolute;
+    left: 20px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    color: #C4C4C4;
+    transform: rotate(270deg);
+    transition: all .5s ease;
+
+}
+
+/* или transform: rotate(-90deg)  */
+
+.services__item:hover {
+    border: 2px solid #5A0D67;
+    width: 500px;
+}
+
+.services__item:hover .services__item-title {
+    color: #5A0D67;
+}
+
+.services__item:hover::before {
+    color: #5A0D67;
+
+}
+
+
+.services__item-title{
+    font-size: 24px;
+    font-weight: 300;
+
+}
+
+.benefits {
+    margin-bottom: 100px;
+}
+
+.benefits__inner {
+    display: flex;
+}
+
+
+/* потому что родитель flex, а значит уже не так себя ведет */
+.benefits__content {
+    width: 100%;
+    color: #fff;
+}
+
+.benefits__images {
+    margin-right: 95px;
+}
+
+
+.benefits__title {
+    margin-left: 185px;
+
+}
+
+
+.benefits__list {
+    list-style: none;
+    background-color: #21062A;
+    padding: 25px 0 25px 185px;
+}
+
+.benefits__item {
+    width: 320px;
+    margin-bottom: 20px;
+}
+
+
+.benefits__item-num {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.benefits__item-title {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300;
+}
+
+
+.benefits__item-text {
+    color: #C4C4C4;
+}
+
+
+.carousel {
+    margin-bottom: 100px;
+}
+
+.carousel__inner {
+    margin: 0 -7px;
+}
+
+.carousel__item {
+
+}
+
+
+
+.carousel__item-box {
+    border: 1px solid #C4C4C4;
+    padding: 6px 6px 16px 6px;
+    margin: 0 7px;
+    text-align: center;
+    transition: all 0.35s ease;
+}
+
+
+.carousel__item-box:hover {
+    background-color: #5A0D67;
+    color: #fff;
+    border-color: #5A0D67;
+}
+.carousel__item-img {
+    max-width: 100%;
+    margin-bottom: 23px;
+}
+
+.carousel__item-title {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 5px;
+}
+
+/* делаем именно так, потому что если 
+другой человек будет делать слайдер, чтобы не было такого,
+чтобы все slick-dots были стилизованы */
+.carousel .slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 50px;
+
+
+}
+
+.carousel .slick-dots button {
+    font-size: 0;
+    border: none;
+    margin: 0 10px;
+    width: 50px;
+    height: 1px;
+    background-color: #C4C4C4;
+}
+
+.carousel .slick-active button {
+    background-color: #5A0D67;
+}
+
+.contacts {
+}
+
+.contacts__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__info {
+
+
+
+}
+.title {
+}
+.contacts__info-inner {
+}
+.contacts__info-list {
+    list-style: none;
+}
+.contacts__info-item {
+    margin-bottom: 20px;
+}
+.contacts__info-title {
+    color: #5A0D67;
+
+}
+.contacts__info-text {
+}
+.contacts__form {
+    background-color: #21062A;
+    padding: 50px 75px 57px;
+    text-align: center;
+
+}
+
+.contacts__title {
+    color: #fff;
+    margin-bottom: 16px;
+    margin-left: 53px;
+    text-align: left;
+}
+
+.contacts__title::after {
+    background-color: #fff;
+}
+
+
+.contacts__input {
+    display: block;
+    background-color: transparent;
+    width: 450px;
+    height: 75px;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-bottom: 12px;
+    font-size: 24px;
+    padding: 0 15px;
+    text-align: center;
+
+}
+
+.contacts__input::placeholder {
+    font-family: 'Oswald', sans-serif;
+    color: #C4C4C4;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    
+}
+
+.contacts__btn {
+    border: none;
+    color: #fff;
+    margin-top: 78px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.footer {
+    background-color: #21062A;
+    padding: 24px 0 24px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    height: 100px;
+  
+}
+
+.footer__policy {
+    
+}
