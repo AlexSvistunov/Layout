@@ -256,7 +256,8 @@ a {
 }
 .direction__item-text {
 }
-.direction__img {
+.direction-2__img {
+    margin-right: 70px;
 }
 
 
@@ -265,7 +266,7 @@ a {
 }
 
 .direction__img {
-    margin-right: 100px;
+
 }
 .direction__lists {
     list-style: none;
@@ -606,8 +607,46 @@ a {
     border: none;
     color: #fff;
     font-weight: 700;
+}
+
+
+.menu__btn {
+    width: 40px;
+    height: 30px;
+    display: none;
+}
+
+.menu__btn span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 14px;
+}
+
+.menu__btn::after,
+.menu__btn::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    left: 0;
 
 }
+
+.menu__btn::before {
+    top: 0;
+}
+
+.menu__btn::after {
+    bottom: 0;
+
+}
+
+
 
 
 
