@@ -115,6 +115,7 @@ body {
     margin-left: 45px;
 }
 .menu__list-link {
+    font-weight: 400;
     color: #fff;
     font-size: 25px;
     line-height: 28px;
@@ -532,3 +533,324 @@ body {
 }
 
 
+.slider {
+    background-image: url('../images/slider-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 200px;
+
+}
+
+.slider__inner {
+    padding: 314px 0 77px;
+    
+
+}
+
+
+.slider__item {
+    
+
+
+}
+
+.slider__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    color: #fff;
+    max-width: 600px;
+    margin-left: auto;
+
+}
+
+.slider__text {
+    color: #fff;
+    max-width: 600px;
+    margin-bottom: 259px;
+    margin-left: auto;
+
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots li + li {
+    margin-left: 15px;
+}
+
+.slick-dots button {
+    border: none;
+    padding: 0;
+    font-size: 0;
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+
+.slick-active button{
+    background: #00B2A0;
+}
+
+
+.team__inner {
+    padding-bottom: 204px;
+}
+
+.team__title {
+    margin-bottom: 210px;
+}
+
+.team__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__item {
+    text-align: center;
+}
+
+
+
+.team__item img {
+    margin-bottom: 25px;
+}
+.team__item-info {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: 
+    #242121;
+}
+
+.team__item-name {
+    margin-bottom: 1px;
+    
+
+}
+
+
+.service {
+    padding: 200px 0 200px;
+    background: #F8F8F8;
+}
+
+.service__title {
+    margin-bottom: 183px;
+}
+
+.service__items {
+    display: flex;
+    justify-content: space-between;
+}
+.service__item {
+    padding: 45px 54px 45px 43px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service__item + .service__item {
+    margin-left: 60px;
+}
+.service__item-title,
+.service__item-money{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: 
+    #01353E;
+}
+
+.service__item-title {
+    margin-bottom: 58px;
+}
+
+ul.service__item-list-1 {
+    margin-bottom: auto;
+    
+
+
+    
+}
+.service__list-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+    
+}
+.service__item-money {
+    margin-top: 40px;
+    position: relative;
+
+    
+}
+
+.service__item-money::after {
+    content: "$";
+    font-size: 18px;
+    line-height: 22px;
+    position: absolute;
+    bottom: 7px;
+    padding-left: 5px;
+
+    
+}
+
+.team__item-prof {
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.map {
+    margin: 200px 0 200px;
+}
+
+.map img {
+    margin-left: 50px;
+}
+
+
+.bid {
+    padding-bottom: 200px;
+}
+
+.bid__title {
+    margin-bottom: 243px;
+}
+
+.bid__content {
+    display: flex;
+}
+.form {
+    min-width: 569px;
+    margin-right: 30px;
+}
+.input {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 5px 5px 18px;
+    border-bottom: 2px solid 
+    #DADADA;
+    font-size: 26px;
+    font-weight: 400;
+
+}
+
+.input-1 {
+    margin-bottom: 32px;
+}
+
+.input-2 {
+    margin-bottom: 53px;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+    color: 
+    #00B2A0;
+    max-width: 260px;
+
+}
+.textarea {
+    width: 100%;
+    min-height: 156px;
+    border: none;
+    border-bottom: 2px solid 
+    #DADADA;
+    margin-bottom: 73px;
+    padding: 5px 5px 18px;
+    font-size: 26px;
+    font-weight: 400;
+
+}
+
+
+.bid__connection {
+    background-color: 
+    #F8F8F8;
+    height: 100%;
+    width: 100%;
+}
+ul.bid__connection-list {
+    padding: 49px 0 71px 52px
+    
+}
+
+.bid__connection li {
+    max-width: 327px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.bid__connection li + li {
+    margin-top: 65px;
+}
+
+.bid__btn {
+    padding: 24px 111px;
+    background-color: 
+    #fff;
+    border: 1px solid #C4C4C4;
+    color: 
+    #242121;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 18px;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 200px;
+
+}
+
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.socials__link {
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    transition: all .3s ease;
+}
+
+.socials__link:hover {
+    color:
+    #00B2A0;
+}
+
+
+.footer {
+    background: #00B2A0;
+    padding: 68px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo {
+    margin: 0;
+}
