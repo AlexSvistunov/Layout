@@ -790,11 +790,18 @@ ul.pricing__list {
 
 }
 
+.partners__link {
+
+}
+
+.partners img {
+
+}
 
 
 .touch {
     background-image: url('../images/MapBg.jpg');
-    background-position: right;
+    background-position: right 100%;
     background-size: 40%;
     background-repeat: no-repeat;
 
@@ -822,7 +829,7 @@ ul.pricing__list {
     border: none;
     border-bottom: 2px solid
     #373A39;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 
 }
 
@@ -832,6 +839,7 @@ ul.pricing__list {
     border: none;
     border-bottom: 2px solid #373A39;
     margin-bottom: 40px;
+    resize: none;
 }
 
 .input,
@@ -852,6 +860,7 @@ ul.pricing__list {
     color: 
     #B8B8B8;
     text-transform: uppercase;
+    font-weight: 300;
 }
 
 .form__btn {
@@ -892,11 +901,16 @@ ul.pricing__list {
 
 }
 
-.footer__top-inner img {
+
+.footer__top-link {
+    display: inline-block;
+    margin-bottom: 70px;
+}
+/* .footer__top-inner img {
     display: block;
     margin: 0 auto;
     margin-bottom: 70px;
-}
+} */
 
 .socials {
     display: flex;
@@ -905,6 +919,7 @@ ul.pricing__list {
 }
 
 .socials__items {
+    margin-bottom: 65px;
  
 
 
@@ -930,30 +945,26 @@ ul.pricing__list {
     font-weight: 400;
     font-size: 14px;
     line-height: 32px;
-    margin-bottom: 60px;
     color: #fff;
     margin: 0 auto;
-    padding-top: 65px;
     padding-bottom: 57px;
 
 }
 
 .footer__arrow {
-
+    display: inline-block;
 }
 
-.footer__arrow img {
 
-}
 
 .footer__bot {
+    padding: 43px 0 41px;
     background-color: #2A2C2B;
 
 
 }
 
 .footer__bot-inner {
-    padding: 43px 0 41px;
     color: 
     #CCCCCC;
 }
