@@ -106,6 +106,13 @@ body {
     margin-right: 185px;
 }
 
+.menu__btn {
+    padding: 0;
+    border: transparent;
+    background-color: transparent;
+    display: none;
+}
+
 .menu__list {
     display: flex;
 }
@@ -132,7 +139,7 @@ body {
 
 
 .header__content-inner {
-    min-height: calc(100vh - 95px);
+    min-height: calc(100vh - 102px);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -233,8 +240,13 @@ body {
 .about__item {
     width: 350px;
     position: relative;
+    margin-right: 74px;
     
 
+}
+
+.about__item:last-child {
+    margin-right: 0;
 }
 
 .about__item::before {
@@ -265,9 +277,7 @@ body {
     
 }
 
-.about__item + .about__item  {
-    margin-left: 75px;
-}
+
 
 .about__item-title {
     font-weight: 400;
@@ -306,6 +316,7 @@ body {
 
 .about__content-percent {
     margin-top: 13px;
+    width: 33%;
 
 }
 .about__percent-item {
@@ -471,7 +482,6 @@ body {
 .gallery__bot-items {
     display: flex;
     justify-content: space-evenly;
-    margin-right: 100px;
 }
 
 .gallery__bot-item {
@@ -854,3 +864,498 @@ ul.bid__connection-list {
 .footer__logo {
     margin: 0;
 }
+
+/* на 1200 padding у блоков 75,
+на 1000 title изменяется ширина, становится по центру, убавляется 
+margin
+на 800 убавляется font-size */
+
+/* как работает margin-bot у title на 1000 */
+
+@media(max-width:1400px) {
+    .do__content {
+        padding: 50px 0 75px;
+
+    }
+}
+
+@media(max-width:1200px) {
+    .header__title {
+        font-size: 150px;
+        line-height: 190px;
+    }
+
+    .header__subtitle {
+        font-size: 22px;
+        line-height: 25px;
+    
+    }
+
+    .menu__list-link {
+        font-size: 22px;
+        line-height: 25px;
+
+    }
+
+    .info__inner,
+    .about__inner {
+        padding: 75px 0;
+    }
+
+    .do {
+        background-image: none;
+    }
+
+    .do__title {
+        text-align: center;
+    }
+    
+    .do__texts {
+        max-width: 100%;
+    }
+
+   .gallery__title {
+    margin-top: 75px;
+    margin-bottom: 75px;
+   }
+
+   .slider__inner {
+    padding: 200px 0 66px;
+   }
+
+   .slider__title {
+    font-size: 40px;
+    line-height: 50px;
+    max-width: 500px;
+    }
+
+    .slider__text {
+        max-width: 500px;
+    }
+
+    .team__title {
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width:1150px) {
+    .about__items {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .about__item {
+        max-width: 100%;
+        margin: 0 auto 70px;
+
+    }
+
+    .about__item:last-child {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .slider {
+        margin-bottom: 100px;
+    }
+
+    /* .about__item-1,
+    .about__item-2,
+    .about__item-3 {
+        margin: 20px auto;
+    }
+
+    .about__item + .about__item {
+        margin-left: auto;
+    } */
+
+    /* исправить на margin а не вот это вот все в css не при адаптиве */
+
+    
+}
+@media(max-width:1060px) {
+    .about__content-text {
+        max-width: 538px;
+    
+    }
+
+    .gallery__video-bot {
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .gallery__video {
+        margin-top: 100px;
+    }
+
+}
+
+
+
+
+@media(max-width:1000px) {
+    .info__title,
+    .about__title,
+    .do__title,
+    .team__title{
+        max-width: 750px;
+        margin: 0 auto 60px;
+    }
+
+    .info__content-right p:nth-child(2){
+        margin-bottom: 42px;
+    }
+    .info__content-right p:first-child {
+        margin-bottom: 35px;
+    }
+}
+
+@media(max-width:988px) {
+
+    .header__top-inner {
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .menu__btn {
+        display: block;
+        position: relative;
+        z-index: 2;
+        
+    }
+
+    .logo {
+        position: relative;
+        z-index: 2;
+    }
+
+    .menu__list {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        transform: translateX(-300%);
+        display: block;
+        text-align: center;
+        padding: 20px 0 20px;
+        background-color: #ccc;
+        transition: all 0.5s ease;
+    
+        
+    }
+
+    .about__content{
+        display: block;
+        
+    }
+
+    .about__content-percent {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .about__texts {
+        width: 100%;
+        
+    }
+
+    .about__content-text {
+        max-width: 100%;
+    }
+
+
+    .menu__list-item + .menu__list-item {
+        margin-left: 0;
+    }
+
+    .menu__list-link {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .header__top-inner.header__top-inner--active .menu__list {
+        transform: translateX(0);
+    }
+
+    .header__top-inner.header__top-inner--active path{
+        fill: white;
+        transition: all 0.5s ease;
+    }
+
+    .header__top-inner.header__top-inner--active rect{
+        fill: white;
+        transition: all 0.5s ease;
+    }
+}
+
+    @media(max-width:800px) {
+        .header__title {
+            font-size: 120px;
+            line-height: 140px;
+        }
+
+        .header__icon {
+            padding-bottom: 0;
+            margin-bottom: auto;
+        }
+        
+        .info__title,
+        .about__title,
+        .do__title,
+        .gallery__title,
+        .team__title {
+            max-width: 570px;
+            font-size: 35px;
+            line-height: 40px;
+            margin-bottom: 75px;
+        }
+        
+        .gallery__buttons {
+            margin-bottom: 30px;
+        }
+
+        .gallery__buttons button {
+            font-size: 20px;
+            line-height: 15px;
+        }
+
+        .gallery__content {
+            margin-bottom: 50px;
+        }
+
+        .more__btn {
+            font-size: 15px;
+            line-height: 15px;
+        }
+
+        .blockquote {
+            padding: 60px 0;
+            line-height: 35px;
+            font-size: 30px;
+        }
+
+        .blockquote span {
+            font-size: 12px;
+            line-height: 14px;
+            margin-top: 7px;
+        }
+
+        .gallery__bot-items {
+
+
+        }
+
+        .gallery__bot-item {
+            font-size: 55px;
+            line-height: 67px;
+            
+        }
+
+        .gallery__video-bot {
+            margin-top: 50px;
+            padding-bottom: 50px;
+        }
+    
+        .gallery__video {
+            margin-top: 50px;
+        }
+
+        .slider__title {
+            font-size: 33px;
+            line-height: 40px;
+            max-width: 350px;
+        }
+
+        .slider__text {
+            max-width: 350px;
+        }
+
+        .slider {
+            margin-bottom: 50px;
+        }
+
+        .team__title {
+            margin-bottom: 40px;
+        }
+    }
+
+    @media(max-width:670px) {
+        .info__title{
+            max-width: 500px;
+            margin-bottom: 50px;
+        }
+
+        .about__title,
+        .do__title {
+            max-width: 430px;
+        }
+
+        .info__content {
+            display: block;
+        }
+
+        .info__content div {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .about__content-percent {
+            max-width: 350px;
+        }
+
+        .gallery__content {
+            column-count: 1;
+        }
+
+        .content-row {
+            display: block;
+            margin-bottom: 40px;
+        }
+
+        .content__item {
+            width: 75%;
+            margin: 0 auto 40px;
+        }
+
+        .more__btn {
+            padding: 20px 78px;
+            font-size: 12px;
+        }
+
+        .gallery__bot-items {
+            width: 100%;
+            flex-wrap: wrap;
+
+
+        }
+
+        .gallery__bot-item {
+            width: 50%;
+            font-size: 55px;
+            line-height: 67px;
+            margin-bottom: 25px;
+            
+        }
+    }
+
+    @media(max-width:500px) {
+        .header__title {
+            font-size: 90px;
+            line-height: 110px;
+        }
+
+        .info__title{
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        .about__content-percent {
+            max-width: 250px;
+            margin: 0;
+        }
+
+        .about__title,
+        .do__title,
+        .team__title{
+            font-size: 30px;
+            line-height: 36px;
+            max-width: 366px;
+        }
+
+        .gallery__buttons {
+        }
+
+        .gallery__buttons button{
+            display: block;
+            margin: 0 auto 25px;
+           
+        }
+
+        .gallery__btn + .gallery__btn {
+            display: block;
+            margin: 0 auto 25px;
+        }
+
+
+        .slider__inner {
+            padding: 130px 0 48px;
+        }
+        .slider__title {
+            margin-right: auto;
+        }
+
+        .slider__text {
+            margin-right: auto;
+        }
+
+
+    }
+
+
+
+    @media(max-width:465px)  {
+        .header__title {
+            font-size: 60px;
+            line-height: 75px;
+        }
+        .header__subtitle {
+            font-size: 17px;
+            line-height: 22px;
+        }
+
+        .info__title,
+        .about__title,
+        .do__title
+         {
+            max-width: 300px;
+         }
+    }
+
+    @media(max-width:410px) {
+        .info__title {
+            max-width: 250px;
+        }
+
+        .gallery__bot-item {
+            font-size: 40px;
+            line-height: 55px;
+            width: 100%;
+        }
+
+        .slider__title {
+            font-size: 30px;
+            line-height: 36px;
+            max-width: 300px;
+
+        }
+
+        .slider__text {
+            max-width: 300px;
+        }
+
+        .team__title {
+            max-width: 250px;
+        }
+    }
+
+    @media(max-width:345px) {
+        .about__content-percent {
+            max-width: 150px;
+        }
+
+        .about__item-title {
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+
+
+    }
+    
+
+
+
+
+
