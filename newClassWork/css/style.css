@@ -1447,12 +1447,27 @@ ul.socials {
 }
 
 @media(max-width: 440px) {
+    ul.socials {
+        display: block;
+        
+        
+
+    }
+
+    .socials__items {
+        width: 100%;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        
+
+    }
+
+    .socials__items-link {
+        font-size: 10px;
+        line-height: 12px;
+    }
 
     
-    .socials {
-        max-width: 25%;
-        
-    }
 }
 
 
