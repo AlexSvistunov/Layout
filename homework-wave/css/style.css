@@ -50,6 +50,10 @@ img {
     display: block;
 }
 
+textarea {
+    resize: none;
+}
+
 input,
 button,
 textarea,
@@ -745,7 +749,7 @@ ul.service__item-list-1 {
     display: flex;
 }
 .form {
-    min-width: 569px;
+    max-width: 569px;
     margin-right: 30px;
 }
 .input {
@@ -798,7 +802,7 @@ ul.service__item-list-1 {
     background-color: 
     #F8F8F8;
     height: 100%;
-    width: 100%;
+    width: 50%;
 }
 ul.bid__connection-list {
     padding: 49px 0 71px 52px
@@ -958,6 +962,14 @@ margin
     margin-top: 75px;
    }
 
+   .bid__title  {
+    margin-bottom: 100px;
+   }
+
+   .bid {
+        padding-bottom: 75px;
+   }
+
 
 
     
@@ -1032,7 +1044,8 @@ margin
     .about__title,
     .do__title,
     .team__title,
-    .service__title{
+    .service__title,
+    .bid__title{
         max-width: 750px;
         margin: 0 auto 60px;
     }
@@ -1060,6 +1073,23 @@ margin
     .service__item + .service__item {
         margin-left: 0;
         width: 100%;
+    }
+
+    .bid__content {
+        display: block;
+    }
+
+    .form {
+        max-width: 100%;
+    }
+
+    .bid__connection {
+        width: 90%;
+        margin-bottom: 35px;
+    }
+
+    .socials {
+        margin-bottom: 30px;
     }
 
     
@@ -1162,7 +1192,8 @@ margin
         .do__title,
         .gallery__title,
         .team__title,
-        .service__title {
+        .service__title,
+        .bid__title {
             max-width: 570px;
             font-size: 35px;
             line-height: 40px;
@@ -1248,6 +1279,21 @@ margin
         .team__item-prof {
             margin-bottom: 25px;
         }
+
+        .bid__btn {
+            margin-bottom: 75px;
+            font-size: 20px;
+            line-height: 14px;
+            padding: 22px 90px
+        }
+
+        .bid {
+            padding-bottom: 50px;
+        }
+
+        .footer {
+            padding: 50px 0;
+        }
     }
 
     @media(max-width:670px) {
@@ -1258,7 +1304,8 @@ margin
 
         .about__title,
         .do__title,
-        .service__title {
+        .service__title,
+        .bid__title {
             max-width: 430px;
         }
 
@@ -1325,7 +1372,16 @@ margin
             .service__item + .service__item {
                 width: 75%;
                 margin: 0 auto;
-                margin-bottom: 25px;
+                margin-bottom: 50px;
+            }
+
+            .socials {
+                justify-content: space-around;
+            }
+            .socials a {
+                font-size: 20px;
+                line-height: 14px;
+                padding: 20px;
             }
     }
 
@@ -1348,7 +1404,8 @@ margin
         .about__title,
         .do__title,
         .team__title,
-        .service__title{
+        .service__title,
+        .bid__title{
             font-size: 30px;
             line-height: 36px;
             max-width: 366px;
@@ -1361,6 +1418,10 @@ margin
             display: block;
             margin: 0 auto 25px;
            
+        }
+
+        .bid__title {
+            margin-top: 40px;
         }
 
         .gallery__btn + .gallery__btn {
@@ -1396,6 +1457,10 @@ margin
             display: none;
         }
 
+        .footer {
+            padding: 35px 0;
+        }
+
 
     }
 
@@ -1414,12 +1479,26 @@ margin
         .info__title,
         .about__title,
         .do__title,
-        .service__title
+        .service__title,
+        .bid__title
          {
             max-width: 300px;
          }
-    }
 
+         .socials {
+            flex-wrap: wrap;
+            text-align: center;
+         }
+
+         .socials a {
+            width: 100%;
+         }
+    }
+    @media(max-width:433px)  {
+        .bid__title {
+            max-width: 280px;
+        }
+    }
     @media(max-width:410px) {
         .info__title {
             max-width: 250px;
