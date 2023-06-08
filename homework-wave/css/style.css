@@ -728,7 +728,8 @@ ul.service__item-list-1 {
 }
 
 .map img {
-    margin-left: 50px;
+    margin: 0 auto;
+    width: 85%;
 }
 
 
@@ -877,7 +878,10 @@ margin
         padding: 50px 0 75px;
 
     }
+
+   
 }
+
 
 @media(max-width:1200px) {
     .header__title {
@@ -936,6 +940,27 @@ margin
     .team__title {
         margin-bottom: 50px;
     }
+
+    .team__inner {
+        padding-bottom: 75px;
+    }
+
+    .service {
+        padding: 100px 0 100px;
+    }
+    
+    .service__title {
+        margin-bottom: 75px;
+    }
+
+   .map {
+    padding: 75px 0 75px;
+    margin-top: 75px;
+   }
+
+
+
+    
 }
 
 @media(max-width:1150px) {
@@ -957,6 +982,10 @@ margin
 
     .slider {
         margin-bottom: 100px;
+    }
+
+    .team__items{
+        column-gap: 35px;
     }
 
     /* .about__item-1,
@@ -988,6 +1017,11 @@ margin
         margin-top: 100px;
     }
 
+    .map {
+        padding: 40px 0 40px;
+        margin-top: 40px;
+       }
+
 }
 
 
@@ -997,7 +1031,8 @@ margin
     .info__title,
     .about__title,
     .do__title,
-    .team__title{
+    .team__title,
+    .service__title{
         max-width: 750px;
         margin: 0 auto 60px;
     }
@@ -1008,6 +1043,26 @@ margin
     .info__content-right p:first-child {
         margin-bottom: 35px;
     }
+
+    .service__items {
+        flex-wrap: wrap;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .service__item {
+        width: 100%;
+        margin-bottom: 35px;
+    
+
+    }
+
+    .service__item + .service__item {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    
 }
 
 @media(max-width:988px) {
@@ -1106,7 +1161,8 @@ margin
         .about__title,
         .do__title,
         .gallery__title,
-        .team__title {
+        .team__title,
+        .service__title {
             max-width: 570px;
             font-size: 35px;
             line-height: 40px;
@@ -1180,6 +1236,18 @@ margin
         .team__title {
             margin-bottom: 40px;
         }
+
+        .team__items {
+            display: block;
+        }
+
+        .team__item img {
+            margin: 0 auto 25px;
+        }
+
+        .team__item-prof {
+            margin-bottom: 25px;
+        }
     }
 
     @media(max-width:670px) {
@@ -1189,7 +1257,8 @@ margin
         }
 
         .about__title,
-        .do__title {
+        .do__title,
+        .service__title {
             max-width: 430px;
         }
 
@@ -1240,6 +1309,26 @@ margin
         }
     }
 
+    @media(max-width:600px) {
+
+
+            .service__items {
+                width: 90%;
+            }
+
+            .service__item {
+                width: 75%;
+                margin: 0 auto;
+                margin-bottom: 25px;
+            }
+
+            .service__item + .service__item {
+                width: 75%;
+                margin: 0 auto;
+                margin-bottom: 25px;
+            }
+    }
+
     @media(max-width:500px) {
         .header__title {
             font-size: 90px;
@@ -1258,7 +1347,8 @@ margin
 
         .about__title,
         .do__title,
-        .team__title{
+        .team__title,
+        .service__title{
             font-size: 30px;
             line-height: 36px;
             max-width: 366px;
@@ -1290,6 +1380,22 @@ margin
             margin-right: auto;
         }
 
+        .service__item-title {
+            margin-bottom: 35px;
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        .service__item-money  {
+            margin-top: 27px;
+        }
+
+    
+
+        .map {
+            display: none;
+        }
+
 
     }
 
@@ -1307,7 +1413,8 @@ margin
 
         .info__title,
         .about__title,
-        .do__title
+        .do__title,
+        .service__title
          {
             max-width: 300px;
          }
@@ -1337,6 +1444,26 @@ margin
 
         .team__title {
             max-width: 250px;
+        }
+
+        .service__items {
+            width: 100%;
+
+        }
+
+        .service__item {
+            width: 95%;
+
+        }
+
+        .service__item + .service__item  {
+            width: 95%;
+
+        }
+
+        .service__title {
+            max-width: 233px;
+
         }
     }
 
