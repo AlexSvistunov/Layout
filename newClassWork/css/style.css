@@ -105,10 +105,24 @@ body {
 
 
 .header__top {
+    position: fixed;
+    background-color: #fff;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    
+
+}
+
+.header__top-inner {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding-bottom: 29px;
+
 }
 
 .menu__btn {
@@ -145,6 +159,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
 }
 
 .header__content-inner {
@@ -152,7 +167,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
+    margin-top: 100px;
 }
 
 .header__content-wrapper {
@@ -1173,6 +1189,10 @@ ul.socials {
         background-color: #ccc;
         transform: translateY(-300%);
         transition: all .4s ease;
+    }
+
+    .haeder__top-inner {
+        padding-bottom: 5px;
     }
 
     .header__content-title {
