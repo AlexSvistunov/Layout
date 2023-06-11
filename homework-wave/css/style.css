@@ -1016,6 +1016,7 @@ margin
 
 
 
+
     
 }
 
@@ -1229,12 +1230,12 @@ margin
         z-index: 999;
     }
 
-    .header__content-inner {
-        margin-bottom: 100px;
-    }
-
     .socials {
         margin-bottom: 50px;
+    }
+
+    .header__content-inner {
+        min-height: 100vh;
     }
 }
 
