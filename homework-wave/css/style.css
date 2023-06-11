@@ -69,7 +69,7 @@ body {
     line-height: 18px;
     letter-spacing: 0.6px;
     color: #242121;
-    
+
 }
 
 .container {
@@ -99,8 +99,20 @@ body {
     
 }
 
-.header__top {
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.2);
+    opacity: 0.5;
+    z-index: 2;
+}
 
+.header__top {
+  
 
 }
 
@@ -109,6 +121,9 @@ body {
     padding-top: 35px;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 3;
+
 }
 
 .logo {
@@ -146,8 +161,14 @@ body {
     
 }
 
+.header__content {
+    
+}
+
 
 .header__content-inner {
+    position: relative;
+    z-index: 3;
     min-height: calc(100vh - 102px);
     text-align: center;
     display: flex;
@@ -156,6 +177,7 @@ body {
     justify-content: space-between;
 }
 .header__title {
+    
     font-family: 'Raleway', sans-serif;
     font-size: 200px;
     line-height: 235px;
@@ -558,7 +580,26 @@ body {
     background-size: cover;
     background-position: center center;
     margin-bottom: 200px;
+    position: relative;
+   
 
+}
+
+.slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    z-index: 2;
+}
+
+.slider__inner-content {
+    position: relative;
+    z-index: 3;
 }
 
 .slider__inner {
@@ -743,7 +784,7 @@ ul.service__item-list-1 {
 
 
 .bid {
-    padding-bottom: 200px;
+    padding-bottom: 20px;
 }
 
 .bid__title {
@@ -863,17 +904,15 @@ ul.bid__connection-list {
 
 
 .footer {
-    background: #00B2A0;
-    padding: 68px 0;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #00B2A0;
+    padding: 70px 0 70px;
 }
 
-.footer__logo {
-    margin: 0;
+.footer img {
+    margin: 0 auto;
 }
+
+
 
 /* на 1200 padding у блоков 75,
 на 1000 title изменяется ширина, становится по центру, убавляется 
@@ -1131,7 +1170,7 @@ margin
         display: block;
         text-align: center;
         padding: 20px 0 20px;
-        background-color: #ccc;
+        background-color: #8e8585;
         transition: all 0.5s ease;
     
         
@@ -1179,6 +1218,24 @@ margin
         fill: white;
         transition: all 0.5s ease;
     }
+
+    .header__top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-color: #00B2A0;
+        z-index: 999;
+    }
+
+    .header__content-inner {
+        margin-bottom: 100px;
+    }
+
+    .socials {
+        margin-bottom: 50px;
+    }
 }
 
     @media(max-width:800px) {
@@ -1203,6 +1260,7 @@ margin
             font-size: 35px;
             line-height: 40px;
             margin-bottom: 75px;
+            padding-top: 75px;
         }
         
         .gallery__buttons {
@@ -1299,6 +1357,10 @@ margin
         .footer {
             padding: 50px 0;
         }
+
+        .about__content-percent {
+            width: 60%;
+        }
     }
 
     @media(max-width:670px) {
@@ -1359,6 +1421,16 @@ margin
             margin-bottom: 25px;
             
         }
+
+        .about__content-percent {
+            width: 50%;
+        }
+        
+        /* .footer {
+            margin-bottom: 50%;
+        } */
+
+        
     }
 
     @media(max-width:600px) {
@@ -1425,9 +1497,14 @@ margin
            
         }
 
-        .bid__title {
-            margin-top: 40px;
+        .bid__title,
+        .team__title{
+            padding-top: 120px;
         }
+
+       
+
+    
 
         .gallery__btn + .gallery__btn {
             display: block;
@@ -1498,6 +1575,10 @@ margin
          .socials a {
             width: 100%;
          }
+
+         .about__content-percent {
+            width: 65%;
+        }
     }
     @media(max-width:433px)  {
         .bid__title {
